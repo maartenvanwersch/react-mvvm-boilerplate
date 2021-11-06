@@ -1,6 +1,6 @@
 import { action, makeObservable, observable } from "mobx";
-import { ViewModel } from "../interfaces/viewModel";
-import { BaseVm } from "./BaseVm";
+import { ViewModel } from "../../interfaces/viewModel";
+import { BaseVm } from "../../viewmodels/BaseVm";
 
 export class HomeVm extends BaseVm {
   count: number = 0
