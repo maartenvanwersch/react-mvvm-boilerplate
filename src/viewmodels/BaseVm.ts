@@ -2,12 +2,12 @@ import { ViewModel } from "../interfaces/viewModel";
 import { RootStore } from "../stores/RootStore";
 
 export class BaseVm {
-  _document: Document;
-  _rootStore: RootStore;
+  document: Document;
+  rootStore: RootStore;
 
   constructor({ document, rootStore }: ViewModel) {
-    this._document = document;
-    this._rootStore = rootStore;
+    this.document = document;
+    this.rootStore = rootStore;
   }
   
 }
