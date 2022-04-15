@@ -1,16 +1,16 @@
-import { action, makeObservable, observable } from "mobx";
+import { makeAutoObservable } from "mobx";
 import { ViewModel } from "../../interfaces/viewModel";
-import { BaseVm } from "../../viewmodels/BaseVm";
+import {RootStore} from "../../stores";
 
-export class HomeVm extends BaseVm {
+export class HomeVm {
+  document: Document;
+  rootStore: RootStore;
   count: number = 0
 
   constructor({ document, rootStore }: ViewModel) {
-    super({ document, rootStore });
-    makeObservable(this, {
-      count: observable,
-      handleCountChange: action.bound
-    })
+    this.document = document;
+    this.rootStore = rootStore;
+    makeAutoObservable(this)
   }
 
   handleCountChange(count: number): void {
