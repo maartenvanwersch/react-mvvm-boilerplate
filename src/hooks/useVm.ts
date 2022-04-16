@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { VmRef } from '../types'
+import { VmRef } from '@my-types/vm-ref'
 
 /**
  * Create ref to the functional component (It will not re-run on each render)

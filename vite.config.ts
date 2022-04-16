@@ -19,7 +19,7 @@ export default defineConfig({
       { find: '@components', replacement: `${path.resolve(__dirname, 'src/components')}/` },
       { find: '@contexts', replacement: `${path.resolve(__dirname, 'src/contexts')}/` },
       { find: '@hooks', replacement: `${path.resolve(__dirname, 'src/hooks')}/` },
-      { find: '@interfaces', replacement: `${path.resolve(__dirname, 'src/interfaces')}/` },
+      { find: '@my-types', replacement: `${path.resolve(__dirname, 'src/my-types')}/` },
       { find: '@pages', replacement: `${path.resolve(__dirname, 'src/pages')}/` },
       { find: '@providers', replacement: `${path.resolve(__dirname, 'src/providers')}/` },
       { find: '@stores', replacement: `${path.resolve(__dirname, 'src/stores')}/` },

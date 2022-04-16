@@ -22,7 +22,7 @@
       "@contexts": ["./contexts"],
       "@hooks/*": ["./hooks/*"],
       "@hooks": ["./hooks"],
-      "@interfaces/*": ["./interfaces/*"],
+      "@my-types/*": ["./my-types/*"],
       "@pages/*": ["./pages/*"],
       "@stores/*": ["./stores/*"],
       "@stores": ["./stores"],
