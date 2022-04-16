@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
-import { ViewModel } from "../../interfaces/viewModel";
-import {RootStore} from "../../stores";
+import { ViewModel } from "@interfaces/view-model";
+import {RootStore} from "@stores";
 
 export class HomeVm {
   document: Document;
