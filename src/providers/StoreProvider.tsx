@@ -1,12 +1,8 @@
-import React, { useMemo } from "react";
+import React, {ProviderProps, useMemo } from "react";
 import { StoreContext } from "@contexts";
 import {RootStore} from "@stores";
 
-interface ProviderProps {
-  children: React.ReactNode;
-}
-
-export const StoreProvider = ({ children }: ProviderProps) => {
+export const StoreProvider = ({ children }: ProviderProps<RootStore>) => {
   const rootStore = useMemo(() => new RootStore(), [])
   return (
     <StoreContext.Provider value={rootStore}>
