@@ -1,7 +1,6 @@
 import { observer } from "mobx-react-lite"
 import { FC } from "react"
-import { useAppContext } from "../../hooks/useAppContext"
-import { useVm } from "../../hooks/useVm"
+import { useAppContext, useVm } from "@hooks"
 import { HomeVm } from "./HomeVm"
 import logo from '../../logo.svg'
 import './Home.css'

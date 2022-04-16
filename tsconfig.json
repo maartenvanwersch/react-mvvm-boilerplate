@@ -14,7 +14,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@contexts/*": ["./contexts/*"],
+      "@contexts": ["./contexts"],
+      "@hooks/*": ["./hooks/*"],
+      "@hooks": ["./hooks"],
+      "@interfaces/*": ["./interfaces/*"],
+      "@pages/*": ["./pages/*"],
+      "@stores/*": ["./stores/*"],
+      "@stores": ["./stores"],
+      "@providers/*": ["./providers/*"],
+      "@providers": ["./providers"],
+    }
   },
   "include": ["./src"]
 }

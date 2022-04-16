@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
-import { StoreContext } from "../contexts";
-import {RootStore} from "../stores";
+import { StoreContext } from "@contexts";
+import {RootStore} from "@stores";
 
 interface ProviderProps {
   children: React.ReactNode;
