@@ -11,7 +11,7 @@ export const Home: FC = observer(() => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>Hello Vite + React + MVVM!</p>
         <p>
           <button type="button" onClick={() => viewModel.handleCountChange(viewModel.count + 1)}>
             count is: {viewModel.count}
