@@ -3,6 +3,9 @@
   "license": "MIT",
   "author": "Maarten van Wersch",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && tsc-alias && vite build",
